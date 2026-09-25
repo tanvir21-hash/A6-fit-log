@@ -60,5 +60,5 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Links
 
-- Live Link:
-- GitHub Repository Link:
+- Live Link: https://a6-fit-log-nine.vercel.app/
+- GitHub Repository Link: 
