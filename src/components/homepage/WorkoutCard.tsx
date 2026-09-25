@@ -8,7 +8,7 @@ const WorkoutCard = ({ workout }: { workout: IWorkout }) => {
   return (
     <Link
       href={`/workouts/${workout.id}`}
-      className="group block overflow-hidden rounded-2xl border border-base-300 bg-base-200 transition-all duration-300 hover:-translate-y-1 hover:border-primary/60"
+      className="group block overflow-hidden rounded-2xl border border-base-300 bg-[#14171f] transition-all duration-300 hover:-translate-y-1 hover:border-primary/60"
     >
       <figure className="relative h-48 overflow-hidden">
         <Image
@@ -18,19 +18,20 @@ const WorkoutCard = ({ workout }: { workout: IWorkout }) => {
           sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
           className="object-cover transition duration-500 group-hover:scale-105"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#14171f] via-transparent to-transparent" />
       </figure>
 
-      <div className="space-y-3 p-6">
+      <div className="space-y-3 p-5">
         <TagList tags={workout.muscleGroups} />
 
         <div>
-          <h3 className="font-display text-lg font-bold uppercase text-white group-hover:text-primary">
+          <h3 className="font-display text-lg font-bold uppercase tracking-tight text-white">
             {workout.name}
           </h3>
           <p className="text-xs text-muted">{workout.equipment}</p>
         </div>
 
-        <div className="border-t border-base-300 pt-4">
+        <div className="flex items-center justify-between border-t border-base-300 pt-3 text-xs text-muted">
           <WorkoutStats workout={workout} />
         </div>
       </div>
