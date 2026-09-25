@@ -1,6 +1,6 @@
 interface ITagListProps {
   tags: string[];
-  uppercase?: boolean; // cards show "CHEST", the details page shows "Chest"
+  uppercase?: boolean; 
 }
 
 const TagList = ({ tags, uppercase = true }: ITagListProps) => {

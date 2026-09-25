@@ -6,9 +6,9 @@ import { IWorkout } from "@/src/types/workout-type";
 export const PLAN_LIMIT = 5;
 
 interface IPlanContext {
-  plan: IWorkout[]; // Today's Plan tab
-  saved: IWorkout[]; // Saved tab
-  isLoaded: boolean; // false during the server render, true once localStorage is read
+  plan: IWorkout[];
+  saved: IWorkout[]; 
+  isLoaded: boolean;
   isInPlan: (id: number) => boolean;
   isSaved: (id: number) => boolean;
   addToPlan: (workout: IWorkout) => void;
