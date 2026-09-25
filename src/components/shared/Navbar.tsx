@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 border-b border-base-300 bg-[#0c0d10]/95 backdrop-blur">
       <nav className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-y-3 px-4 py-4 md:px-8">
-        {/* CHANGED: wrapped Image + added text, all inside Link */}
+        
         <Link href="/" className="flex items-center gap-2">
           <Image src={Logo} alt="Logo" className="h-8 w-auto" priority />
           <span className="text-lg font-extrabold uppercase tracking-widest text-white">
