@@ -7,7 +7,7 @@ import Image from "next/image";
 import Logo from "@/src/assets/logo.png";
 
 const navLinks = [
-  { label: "Workouts", href: "/" },
+  { label: "Workout", href: "/" },
   { label: "My Plan", href: "/my-plan" },
 ];
 
@@ -49,7 +49,7 @@ const Navbar = () => {
         <div className="flex items-center gap-4 text-xs">
           <Link href="/my-plan" className="flex items-center gap-2 font-semibold text-white">
             Plan
-            <span className="badge badge-primary badge-sm rounded-full font-bold">{plan.length}</span>
+            <span className="badge badge-sm rounded-full bg-accent font-bold text-accent-content">{plan.length}</span>
           </Link>
           <Link href="/my-plan" className="flex items-center gap-2 text-muted hover:text-white">
             Saved

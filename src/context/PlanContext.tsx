@@ -66,7 +66,6 @@ const PlanProvider = ({ children }: { children: ReactNode }) => {
   return <PlanContext.Provider value={value}>{children}</PlanContext.Provider>;
 };
 
-// Small helper hook so components write `usePlan()` instead of `useContext(PlanContext)`
 export const usePlan = () => {
   const context = useContext(PlanContext);
   if (!context) throw new Error("usePlan must be used inside <PlanProvider>");

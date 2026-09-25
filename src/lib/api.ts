@@ -14,7 +14,6 @@ export const getWorkouts = async (): Promise<IWorkout[]> => {
   }
 };
 
-// One workout for the details page. Returns null for unknown ids (API responds 404).
 export const getWorkoutById = async (id: string): Promise<IWorkout | null> => {
   try {
     const response = await fetch(`${API_BASE_URL}/${id}`, { cache: "no-store" });
