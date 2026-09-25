@@ -90,7 +90,7 @@ const MyPlanPage = () => {
         </label>
       </div>
 
-      {/* List */}
+
       {!isLoaded ? (
         <Loader />
       ) : list.length === 0 ? (

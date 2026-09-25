@@ -6,7 +6,6 @@ import Navbar from "../components/shared/Navbar";
 import Footer from "../components/shared/Footer";
 import PlanProvider from "../context/PlanContext";
 
-// Body text
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
